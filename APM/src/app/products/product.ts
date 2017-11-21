@@ -1,4 +1,4 @@
-export interface Iproduct {
+export interface IProduct {
     productId: number;
     productName: string;
     productCode: string;
@@ -9,7 +9,7 @@ export interface Iproduct {
     imageUrl: string;
 }
 
-export class Product implements Iproduct {
+export class Product implements IProduct {
     constructor(public productId: number,
         public productName: string,
         public productCode: string,
