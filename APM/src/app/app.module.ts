@@ -4,6 +4,7 @@ import {FormsModule} from '@angular/forms';
 import { AppComponent } from './app.component';
 import { ProductListComponent } from './products/product-list.component';
 import { ConvertToSpacesPipe } from './shared/convert-to-spaces.pipe';
+import { StartComponent } from './shared/star.component';
 
 @NgModule({
   //our directives, components, and pipes are declared
@@ -11,7 +12,8 @@ import { ConvertToSpacesPipe } from './shared/convert-to-spaces.pipe';
   declarations: [
     AppComponent,
     ProductListComponent,
-    ConvertToSpacesPipe
+    ConvertToSpacesPipe,
+    StartComponent
   ],
   // directives, components, and pipes from othwe sources such as Angular or 3rd parties
   // defined in external Ang module we add to the imports array
