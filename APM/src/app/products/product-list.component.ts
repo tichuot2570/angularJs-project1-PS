@@ -47,7 +47,7 @@ export class ProductListComponent implements OnInit {
             this.pageTitle = 'Product List: ' + message;
     }
 
-    performFilter(filterBy: string): IProduct[]{
+    performFilter(filterBy: string): IProduct[] {
         filterBy = filterBy.toLocaleLowerCase();
         // Let's look closer at the filter method call. We are using the array filter method filter method to create
         // a new array with elements that pass the test defined in the provided function.
