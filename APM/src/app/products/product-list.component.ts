@@ -68,10 +68,12 @@ export class ProductListComponent implements OnInit {
     // this.filteredProducts = this.products; to ngInit()
     ngOnInit(): void {
         this._productService.getProducts()
+        // we have add add {} to add additional lines in the ft
         .subscribe (products => {
           this.products = products;
           this.filteredProducts = this.products;
         },
+        // if the observable fails
           error => this.errorMessage = <any>error);
         // this.filteredProducts = this.products;
     }
